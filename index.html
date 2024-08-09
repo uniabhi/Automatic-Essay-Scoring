@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Essay Grading App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>LLM Based Automated Essay Grading</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <textarea name="essay" rows="10" cols="50" placeholder="Enter your essay here...">{{ essay_text|default('', true) }}</textarea><br>
+            <input type="file" name="essay_file"><br>
+            <input type="submit" value="Get Score">
+        </form>
+        {% if feedback %}
+        <div class="result">
+            <h2>{{ feedback }}</h2> <!-- Displaying the feedback here -->
+        </div>
+        {% endif %}
+        {% if score is not none %}
+        <div class="result">
+            <h2>Your Essay Score: {{ score }}</h2>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
