@@ -66,6 +66,11 @@ This project implements an automatic essay grading system using the DeBERTa v3 B
 - `fine_tuned_model/`: Directory containing tokenizer files
 - `requirements.txt`: List of Python dependencies
 
+5. User Interface
+![image](https://github.com/user-attachments/assets/8c3e1e2a-d924-42e3-884d-ee9082ba88a3)
+
+This image showcases the user interface of our Automated Essay Grading system, demonstrating the text input area, grading functionality, and score display.
+
 ## Future Work
 
 - Implement more advanced feedback mechanisms
