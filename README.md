@@ -24,8 +24,7 @@ This project implements an automatic essay grading system using the DeBERTa v3 B
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/automatic-essay-grading.git
-   cd automatic-essay-grading
+   https://github.com/uniabhi/Automatic-Essay-Scoring.git
    ```
 
 2. Create a virtual environment and activate it:
@@ -76,7 +75,7 @@ This project implements an automatic essay grading system using the DeBERTa v3 B
 
 ## Contributors
 
-- [Your Name]
+- ABHISHEK KUMAR
 
 ## License
 
